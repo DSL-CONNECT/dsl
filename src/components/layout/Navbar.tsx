@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import diyamaLogo from "@/assets/diyama-logo.png";
+import diyamaLogo from "@/assets/logo.jpg";
 
 const navLinks = [
   { label: "Home", path: "/" },

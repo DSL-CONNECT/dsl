@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Send, RotateCcw, Clock, Sparkles } from "lucide-react";
 import ReactMarkdown from "react-markdown";
-import diyamaLogo from "@/assets/diyama-logo.png";
+import diyamaLogo from "@/assets/logo.jpg";
 import PageTransition from "@/components/PageTransition";
 import { toast } from "@/hooks/use-toast";
 

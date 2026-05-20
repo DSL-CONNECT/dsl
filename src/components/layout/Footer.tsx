@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone } from "lucide-react";
-import diyamaLogo from "@/assets/diyama-logo.png";
+import diyamaLogo from "@/assets/logo.jpg";
 
 const footerLinks = [
   {
