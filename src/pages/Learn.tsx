@@ -108,7 +108,7 @@ const Learn = () => {
 
           <div className="mt-16 text-center">
             <p className="text-sm text-muted-foreground bg-muted p-4 rounded-lg inline-block">
-              Full article content and more guides coming soon. Want to suggest a topic? <a href="mailto:customercare@diyama.online" className="text-primary underline">Let us know</a>.
+              Full article content and more guides coming soon. Want to suggest a topic? <a href="mailto:getitdonerapid@gmail.com" className="text-primary underline">Let us know</a>.
             </p>
           </div>
         </div>

@@ -78,7 +78,7 @@ const Clients = () => {
                 <motion.div whileHover={{ y: -3 }} transition={{ type: "spring", stiffness: 300 }}>
                   <div className="card-elevated p-6 h-full flex flex-col">
                     <div className="flex items-start justify-between mb-3">
-                      <div><h3 className="font-display font-semibold text-lg">{client.name}</h3><p className="text-xs text-muted-foreground">{client.year}</p></div>
+                      <div><h3 className="font-display font-semibold text-lg">{client.name}</h3></div>
                       <span className={`text-xs font-medium px-2 py-1 rounded-full ${client.status === "active" ? "bg-primary/10 text-primary" : "bg-muted text-muted-foreground"}`}>{client.status === "active" ? "Active" : "Previous"}</span>
                     </div>
                     <p className="text-sm text-muted-foreground mb-3">{client.shortDescription}</p>

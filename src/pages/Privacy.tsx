@@ -14,7 +14,7 @@ const Privacy = () => {
           <h2 className="font-display text-xl font-semibold text-foreground">Data Security</h2>
           <p>We implement industry-standard security measures to protect your information. Data is stored securely and access is restricted to authorized personnel only.</p>
           <h2 className="font-display text-xl font-semibold text-foreground">Contact</h2>
-          <p>For privacy-related questions, contact us at customercare@diyama.online or call 0966138238.</p>
+          <p>For privacy-related questions, contact us at getitdonerapid@gmail.com or call 0966138238.</p>
         </div>
       </div>
     </div>

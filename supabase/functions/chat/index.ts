@@ -23,7 +23,7 @@ Your approach:
 - When relevant, mention that Diyama Solutions can provide deeper hands-on support via consultations
 - Don't oversell, build trust through genuine helpfulness
 
-Diyama Solutions contact: customercare@diyama.online | 0966138238 | www.diyama.online`;
+Diyama Solutions contact: getitdonerapid@gmail.com | 0966138238 | www.diyama.online`;
 
 Deno.serve(async (req: Request) => {
   if (req.method === "OPTIONS") {

@@ -16,7 +16,7 @@ const Terms = () => {
           <h2 className="font-display text-xl font-semibold text-foreground">Affiliate Program</h2>
           <p>Affiliate commissions are paid after the referred client completes their first payment. Fraudulent referrals will result in program removal and forfeiture of commissions.</p>
           <h2 className="font-display text-xl font-semibold text-foreground">Contact</h2>
-          <p>For questions about these terms, contact us at customercare@diyama.online.</p>
+          <p>For questions about these terms, contact us at getitdonerapid@gmail.com.</p>
         </div>
       </div>
     </div>
