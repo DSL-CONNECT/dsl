@@ -2,30 +2,47 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
+import Layout from "./components/layout/Layout";
 import Index from "./pages/Index";
+import Services from "./pages/Services";
+import Clients from "./pages/Clients";
+import DiyamaAI from "./pages/DiyamaAI";
+import BusinessFit from "./pages/BusinessFit";
+import Consultations from "./pages/Consultations";
 import Learn from "./pages/Learn";
-import WalletExchange from "./pages/WalletExchange";
-import Opportunities from "./pages/Opportunities";
-import Trending from "./pages/Trending";
-import News from "./pages/News";
-import Leaderboard from "./pages/Leaderboard";
-import Profile from "./pages/Profile";
+import Affiliate from "./pages/Affiliate";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
 import NotFound from "./pages/NotFound";
 
-// Lesson pages
-import WhatIsBase from "./pages/lessons/WhatIsBase";
-import WhoBuiltBase from "./pages/lessons/WhoBuiltBase";
-import HowBaseWorks from "./pages/lessons/HowBaseWorks";
-import BaseAndEthereum from "./pages/lessons/BaseAndEthereum";
-import WhyLowCost from "./pages/lessons/WhyLowCost";
-import WhatYouCanBuild from "./pages/lessons/WhatYouCanBuild";
-import WhatBaseIsNot from "./pages/lessons/WhatBaseIsNot";
-import CreatorsGuide from "./pages/lessons/CreatorsGuide";
-import SafetyAndTrust from "./pages/lessons/SafetyAndTrust";
-import Resources from "./pages/lessons/Resources";
-
 const queryClient = new QueryClient();
+
+const AnimatedRoutes = () => {
+  const location = useLocation();
+  return (
+    <AnimatePresence mode="wait">
+      <Routes location={location} key={location.pathname}>
+        <Route path="/" element={<Index />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/clients" element={<Clients />} />
+        <Route path="/ai" element={<DiyamaAI />} />
+        <Route path="/business-fit" element={<BusinessFit />} />
+        <Route path="/consultations" element={<Consultations />} />
+        <Route path="/learn" element={<Learn />} />
+        <Route path="/affiliate" element={<Affiliate />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/terms" element={<Terms />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </AnimatePresence>
+  );
+};
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
@@ -33,27 +50,9 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/learn" element={<Learn />} />
-          <Route path="/lessons/what-is-base" element={<WhatIsBase />} />
-          <Route path="/lessons/who-built-base" element={<WhoBuiltBase />} />
-          <Route path="/lessons/how-base-works" element={<HowBaseWorks />} />
-          <Route path="/lessons/base-and-ethereum" element={<BaseAndEthereum />} />
-          <Route path="/lessons/why-low-cost" element={<WhyLowCost />} />
-          <Route path="/lessons/what-you-can-build" element={<WhatYouCanBuild />} />
-          <Route path="/lessons/what-base-is-not" element={<WhatBaseIsNot />} />
-          <Route path="/lessons/creators-guide" element={<CreatorsGuide />} />
-          <Route path="/lessons/safety-and-trust" element={<SafetyAndTrust />} />
-          <Route path="/lessons/resources" element={<Resources />} />
-          <Route path="/wallet" element={<WalletExchange />} />
-          <Route path="/opportunities" element={<Opportunities />} />
-          <Route path="/trending" element={<Trending />} />
-          <Route path="/news" element={<News />} />
-          <Route path="/leaderboard" element={<Leaderboard />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <Layout>
+          <AnimatedRoutes />
+        </Layout>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

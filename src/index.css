@@ -1,99 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Diyama Design System - Futuristic Neon Theme
-   Primary: #0052FF (blue), Accent: #00F0FF (cyan), Light: #CDE3FF
-   All colors in HSL format
-*/
-
 @layer base {
   :root {
-    /* Diyama Dark Theme - Default */
-    --background: 0 0% 0%;
-    --foreground: 210 100% 90%;
+    --background: 40 20% 98%;
+    --foreground: 200 25% 15%;
 
-    --card: 220 20% 6%;
-    --card-foreground: 210 100% 90%;
+    --card: 0 0% 100%;
+    --card-foreground: 200 25% 15%;
 
-    --popover: 220 20% 8%;
-    --popover-foreground: 210 100% 90%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 200 25% 15%;
 
-    /* Primary - Base Blue #0052FF */
-    --primary: 220 100% 50%;
+    --primary: 168 45% 25%;
     --primary-foreground: 0 0% 100%;
 
-    /* Secondary - Deep blue-gray */
-    --secondary: 220 30% 15%;
-    --secondary-foreground: 210 100% 90%;
+    --secondary: 40 15% 94%;
+    --secondary-foreground: 200 25% 20%;
 
-    /* Muted - Subtle blue-gray */
-    --muted: 220 20% 12%;
-    --muted-foreground: 210 30% 60%;
+    --muted: 40 10% 93%;
+    --muted-foreground: 200 10% 45%;
 
-    /* Accent - Neon Cyan #00F0FF */
-    --accent: 185 100% 50%;
-    --accent-foreground: 0 0% 0%;
+    --accent: 38 80% 55%;
+    --accent-foreground: 200 25% 12%;
 
-    --destructive: 0 84% 60%;
+    --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 100%;
 
-    /* Success - Green for completed states */
-    --success: 142 76% 45%;
-    --success-foreground: 0 0% 100%;
-
-    /* Warning - Yellow for pending states */
-    --warning: 45 93% 50%;
-    --warning-foreground: 0 0% 0%;
-
-    --border: 220 20% 18%;
-    --input: 220 20% 12%;
-    --ring: 220 100% 50%;
+    --border: 40 15% 89%;
+    --input: 40 15% 89%;
+    --ring: 168 45% 25%;
 
     --radius: 0.75rem;
 
-    /* Custom Diyama tokens */
-    --glow-primary: 220 100% 50%;
-    --glow-accent: 185 100% 50%;
-    --text-light: 210 100% 90%;
-    --text-muted: 210 30% 70%;
+    --warm: 15 70% 60%;
+    --warm-foreground: 0 0% 100%;
 
-    /* Gradient stops */
-    --gradient-start: 220 100% 50%;
-    --gradient-end: 185 100% 50%;
+    --gold: 38 80% 55%;
+    --gold-foreground: 200 25% 12%;
 
-    /* Sidebar overrides */
-    --sidebar-background: 0 0% 3%;
-    --sidebar-foreground: 210 100% 90%;
-    --sidebar-primary: 220 100% 50%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 220 20% 12%;
-    --sidebar-accent-foreground: 210 100% 90%;
-    --sidebar-border: 220 20% 15%;
-    --sidebar-ring: 220 100% 50%;
+    --surface: 40 20% 96%;
+    --surface-elevated: 0 0% 100%;
+
+    --font-display: 'Playfair Display', serif;
+    --font-body: 'DM Sans', sans-serif;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
-  /* Keep dark mode same as root since Diyama is dark-first */
   .dark {
-    --background: 0 0% 0%;
-    --foreground: 210 100% 90%;
-    --card: 220 20% 6%;
-    --card-foreground: 210 100% 90%;
-    --popover: 220 20% 8%;
-    --popover-foreground: 210 100% 90%;
-    --primary: 220 100% 50%;
+    --background: 200 25% 8%;
+    --foreground: 40 20% 95%;
+    --card: 200 20% 12%;
+    --card-foreground: 40 20% 95%;
+    --popover: 200 20% 12%;
+    --popover-foreground: 40 20% 95%;
+    --primary: 168 45% 40%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 220 30% 15%;
-    --secondary-foreground: 210 100% 90%;
-    --muted: 220 20% 12%;
-    --muted-foreground: 210 30% 60%;
-    --accent: 185 100% 50%;
-    --accent-foreground: 0 0% 0%;
-    --destructive: 0 84% 60%;
+    --secondary: 200 15% 18%;
+    --secondary-foreground: 40 20% 90%;
+    --muted: 200 15% 18%;
+    --muted-foreground: 40 10% 60%;
+    --accent: 38 70% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 100%;
-    --border: 220 20% 18%;
-    --input: 220 20% 12%;
-    --ring: 220 100% 50%;
+    --border: 200 15% 20%;
+    --input: 200 15% 20%;
+    --ring: 168 45% 40%;
+    --surface: 200 20% 10%;
+    --surface-elevated: 200 20% 14%;
   }
 }
 
@@ -103,195 +88,45 @@
   }
 
   body {
-    @apply bg-background text-foreground antialiased;
+    @apply bg-background text-foreground font-body antialiased;
   }
 
-  /* Smooth scrolling */
-  html {
-    scroll-behavior: smooth;
+  h1, h2, h3, h4, h5 {
+    font-family: var(--font-display);
   }
 }
 
 @layer components {
-  /* Glass morphism card */
-  .glass-card {
-    @apply bg-card/40 backdrop-blur-xl border border-border/50 rounded-xl;
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24;
   }
 
-  /* Gradient text */
-  .gradient-text {
-    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+  .container-narrow {
+    @apply max-w-5xl mx-auto;
   }
 
-  /* Gradient border effect */
-  .gradient-border {
-    @apply relative;
-  }
-  
-  .gradient-border::before {
-    content: '';
-    @apply absolute -inset-px rounded-xl bg-gradient-to-r from-primary to-accent -z-10;
+  .container-wide {
+    @apply max-w-7xl mx-auto;
   }
 
-  /* Neon glow effects */
-  .glow-primary {
-    box-shadow: 0 0 20px hsl(var(--primary) / 0.4), 0 0 40px hsl(var(--primary) / 0.2);
+  .text-gradient-primary {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
   }
 
-  .glow-accent {
-    box-shadow: 0 0 20px hsl(var(--accent) / 0.4), 0 0 40px hsl(var(--accent) / 0.2);
+  .card-elevated {
+    @apply bg-card rounded-xl border shadow-sm hover:shadow-md transition-shadow duration-300;
   }
 
-  .glow-text {
-    text-shadow: 0 0 10px hsl(var(--primary) / 0.5), 0 0 20px hsl(var(--accent) / 0.3);
+  .btn-primary {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90 px-6 py-3 rounded-lg font-medium transition-all duration-200;
   }
 
-  /* Gradient button */
-  .btn-gradient {
-    @apply bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold
-           px-6 py-3 rounded-lg transition-all duration-300 ease-out
-           hover:shadow-[0_0_30px_hsl(var(--primary)/0.5)] hover:scale-105;
+  .btn-accent {
+    @apply bg-accent text-accent-foreground hover:bg-accent/90 px-6 py-3 rounded-lg font-medium transition-all duration-200;
   }
 
-  /* Glass button */
-  .btn-glass {
-    @apply bg-card/30 backdrop-blur-lg border border-border/50 text-foreground
-           px-6 py-3 rounded-lg transition-all duration-300 ease-out
-           hover:bg-card/50 hover:border-primary/50;
-  }
-
-  /* Animated underline for links */
-  .link-animated {
-    @apply relative inline-block;
-  }
-  
-  .link-animated::after {
-    content: '';
-    @apply absolute w-full scale-x-0 h-0.5 bottom-0 left-0 
-           bg-gradient-to-r from-primary to-accent origin-bottom-right 
-           transition-transform duration-300;
-  }
-  
-  .link-animated:hover::after {
-    @apply scale-x-100 origin-bottom-left;
-  }
-
-  /* Card hover effect */
-  .card-hover {
-    @apply transition-all duration-300 ease-out
-           hover:scale-[1.02] hover:border-primary/50
-           hover:shadow-[0_0_30px_hsl(var(--primary)/0.2)];
-  }
-
-  /* Pulse animation for nav items */
-  .nav-active {
-    @apply text-primary;
-    animation: nav-pulse 2s ease-in-out infinite;
-  }
-
-  @keyframes nav-pulse {
-    0%, 100% {
-      filter: drop-shadow(0 0 8px hsl(var(--primary) / 0.6));
-    }
-    50% {
-      filter: drop-shadow(0 0 16px hsl(var(--primary) / 0.9));
-    }
-  }
-
-  /* Sparkle animation */
-  .sparkle {
-    animation: sparkle 1.5s ease-in-out infinite;
-  }
-
-  @keyframes sparkle {
-    0%, 100% {
-      opacity: 1;
-      transform: scale(1);
-    }
-    50% {
-      opacity: 0.7;
-      transform: scale(1.1);
-    }
-  }
-
-  /* Float animation for hero elements */
-  .float {
-    animation: float 6s ease-in-out infinite;
-  }
-
-  @keyframes float {
-    0%, 100% {
-      transform: translateY(0px);
-    }
-    50% {
-      transform: translateY(-20px);
-    }
-  }
-
-  /* Rotate animation */
-  .rotate-slow {
-    animation: rotate-slow 20s linear infinite;
-  }
-
-  @keyframes rotate-slow {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-
-  /* Status badges */
-  .badge-pending {
-    @apply bg-warning/20 text-warning border border-warning/30;
-  }
-
-  .badge-progress {
-    @apply bg-primary/20 text-primary border border-primary/30;
-  }
-
-  .badge-completed {
-    @apply bg-success/20 text-success border border-success/30;
-  }
-
-  .badge-cancelled {
-    @apply bg-destructive/20 text-destructive border border-destructive/30;
-  }
-}
-
-@layer utilities {
-  /* Hide scrollbar but keep functionality */
-  .scrollbar-hide {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-  
-  .scrollbar-hide::-webkit-scrollbar {
-    display: none;
-  }
-
-  /* Custom scrollbar */
-  .scrollbar-custom {
-    scrollbar-width: thin;
-    scrollbar-color: hsl(var(--primary) / 0.5) hsl(var(--muted));
-  }
-
-  .scrollbar-custom::-webkit-scrollbar {
-    width: 6px;
-  }
-
-  .scrollbar-custom::-webkit-scrollbar-track {
-    background: hsl(var(--muted));
-    border-radius: 3px;
-  }
-
-  .scrollbar-custom::-webkit-scrollbar-thumb {
-    background: hsl(var(--primary) / 0.5);
-    border-radius: 3px;
-  }
-
-  .scrollbar-custom::-webkit-scrollbar-thumb:hover {
-    background: hsl(var(--primary));
+  .btn-outline-primary {
+    @apply border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-6 py-3 rounded-lg font-medium transition-all duration-200;
   }
 }

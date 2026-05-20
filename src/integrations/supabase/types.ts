@@ -14,42 +14,286 @@ export type Database = {
   }
   public: {
     Tables: {
-      exchange_requests: {
+      affiliate_referrals: {
+        Row: {
+          affiliate_id: string
+          created_at: string
+          id: string
+          notes: string | null
+          payout_status: string
+          referral_status: string
+          referred_email: string | null
+          referred_name: string
+          referred_phone: string | null
+        }
+        Insert: {
+          affiliate_id: string
+          created_at?: string
+          id?: string
+          notes?: string | null
+          payout_status?: string
+          referral_status?: string
+          referred_email?: string | null
+          referred_name: string
+          referred_phone?: string | null
+        }
+        Update: {
+          affiliate_id?: string
+          created_at?: string
+          id?: string
+          notes?: string | null
+          payout_status?: string
+          referral_status?: string
+          referred_email?: string | null
+          referred_name?: string
+          referred_phone?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "affiliate_referrals_affiliate_id_fkey"
+            columns: ["affiliate_id"]
+            isOneToOne: false
+            referencedRelation: "affiliate_signups"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      affiliate_signups: {
         Row: {
           created_at: string
+          email: string
           full_name: string
+          how_you_help: string | null
           id: string
-          kwacha_amount: number
-          notes: string | null
-          phone_number: string
-          session_id: string
+          partner_type: string
+          phone: string | null
           status: string
-          updated_at: string
-          usdc_amount: number
         }
         Insert: {
           created_at?: string
+          email: string
           full_name: string
+          how_you_help?: string | null
           id?: string
-          kwacha_amount: number
-          notes?: string | null
-          phone_number: string
-          session_id: string
+          partner_type: string
+          phone?: string | null
           status?: string
-          updated_at?: string
-          usdc_amount: number
         }
         Update: {
           created_at?: string
+          email?: string
           full_name?: string
+          how_you_help?: string | null
           id?: string
-          kwacha_amount?: number
-          notes?: string | null
-          phone_number?: string
-          session_id?: string
+          partner_type?: string
+          phone?: string | null
           status?: string
-          updated_at?: string
-          usdc_amount?: number
+        }
+        Relationships: []
+      }
+      ai_conversations: {
+        Row: {
+          created_at: string
+          expires_at: string
+          id: string
+          session_id: string
+        }
+        Insert: {
+          created_at?: string
+          expires_at?: string
+          id?: string
+          session_id: string
+        }
+        Update: {
+          created_at?: string
+          expires_at?: string
+          id?: string
+          session_id?: string
+        }
+        Relationships: []
+      }
+      ai_messages: {
+        Row: {
+          content: string
+          conversation_id: string
+          created_at: string
+          id: string
+          role: string
+        }
+        Insert: {
+          content: string
+          conversation_id: string
+          created_at?: string
+          id?: string
+          role: string
+        }
+        Update: {
+          content?: string
+          conversation_id?: string
+          created_at?: string
+          id?: string
+          role?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "ai_messages_conversation_id_fkey"
+            columns: ["conversation_id"]
+            isOneToOne: false
+            referencedRelation: "ai_conversations"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      business_fit_submissions: {
+        Row: {
+          business_name: string
+          business_type: string
+          created_at: string
+          current_challenge: string
+          current_goal: string
+          id: string
+          result: Json | null
+          stage: string
+          status: string
+          target_customers: string
+        }
+        Insert: {
+          business_name: string
+          business_type: string
+          created_at?: string
+          current_challenge: string
+          current_goal: string
+          id?: string
+          result?: Json | null
+          stage: string
+          status?: string
+          target_customers: string
+        }
+        Update: {
+          business_name?: string
+          business_type?: string
+          created_at?: string
+          current_challenge?: string
+          current_goal?: string
+          id?: string
+          result?: Json | null
+          stage?: string
+          status?: string
+          target_customers?: string
+        }
+        Relationships: []
+      }
+      consultation_requests: {
+        Row: {
+          budget: string | null
+          challenge: string
+          company: string | null
+          created_at: string
+          email: string
+          format: string | null
+          full_name: string
+          goal: string | null
+          id: string
+          preferred_date: string | null
+          status: string
+          topic: string
+          whatsapp: string | null
+        }
+        Insert: {
+          budget?: string | null
+          challenge: string
+          company?: string | null
+          created_at?: string
+          email: string
+          format?: string | null
+          full_name: string
+          goal?: string | null
+          id?: string
+          preferred_date?: string | null
+          status?: string
+          topic: string
+          whatsapp?: string | null
+        }
+        Update: {
+          budget?: string | null
+          challenge?: string
+          company?: string | null
+          created_at?: string
+          email?: string
+          format?: string | null
+          full_name?: string
+          goal?: string | null
+          id?: string
+          preferred_date?: string | null
+          status?: string
+          topic?: string
+          whatsapp?: string | null
+        }
+        Relationships: []
+      }
+      contact_submissions: {
+        Row: {
+          created_at: string
+          email: string
+          id: string
+          message: string
+          name: string
+          subject: string | null
+        }
+        Insert: {
+          created_at?: string
+          email: string
+          id?: string
+          message: string
+          name: string
+          subject?: string | null
+        }
+        Update: {
+          created_at?: string
+          email?: string
+          id?: string
+          message?: string
+          name?: string
+          subject?: string | null
+        }
+        Relationships: []
+      }
+      reviews: {
+        Row: {
+          company: string | null
+          created_at: string
+          display_publicly: boolean
+          email: string | null
+          id: string
+          name: string
+          rating: number
+          review_text: string
+          role: string | null
+          status: string
+        }
+        Insert: {
+          company?: string | null
+          created_at?: string
+          display_publicly?: boolean
+          email?: string | null
+          id?: string
+          name: string
+          rating: number
+          review_text: string
+          role?: string | null
+          status?: string
+        }
+        Update: {
+          company?: string | null
+          created_at?: string
+          display_publicly?: boolean
+          email?: string | null
+          id?: string
+          name?: string
+          rating?: number
+          review_text?: string
+          role?: string | null
+          status?: string
         }
         Relationships: []
       }
