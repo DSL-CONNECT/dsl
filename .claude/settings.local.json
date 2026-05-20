@@ -1,0 +1,40 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(Start-Sleep -Seconds 3)",
+      "Bash(Get-Content \"C:\\\\Users\\\\7RECOR~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\E--CODES-Diyama-app-diyama-your-onchain-gateway\\\\702629ab-eb76-403b-a2f7-9b1c734eaa8d\\\\tasks\\\\bfiwhmuzw.output\")",
+      "Bash(start *)",
+      "Bash(gh repo *)",
+      "WebFetch(domain:api.github.com)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(cp /tmp/diyama-growth-hub/src/App.tsx 'E:/CODES/Diyama app/diyama-your-onchain-gateway/src/App.tsx')",
+      "Bash(cp /tmp/diyama-growth-hub/src/index.css 'E:/CODES/Diyama app/diyama-your-onchain-gateway/src/index.css')",
+      "Bash(cp /tmp/diyama-growth-hub/src/App.css 'E:/CODES/Diyama app/diyama-your-onchain-gateway/src/App.css')",
+      "Bash(cp -r /tmp/diyama-growth-hub/src/assets 'E:/CODES/Diyama app/diyama-your-onchain-gateway/src/')",
+      "Bash(cp -r /tmp/diyama-growth-hub/src/data 'E:/CODES/Diyama app/diyama-your-onchain-gateway/src/')",
+      "Bash(rm -f 'E:/CODES/Diyama app/diyama-your-onchain-gateway/src/pages/*.tsx')",
+      "Bash(cp /tmp/diyama-growth-hub/src/pages/*.tsx 'E:/CODES/Diyama app/diyama-your-onchain-gateway/src/pages/')",
+      "Bash(npm install *)",
+      "Bash(pkill -f \"vite\")",
+      "PowerShell(npm cache *)",
+      "PowerShell(Get-WmiObject *)",
+      "PowerShell(Get-NetTCPConnection *)",
+      "PowerShell(Start-Process \"http://localhost:8081\")",
+      "PowerShell(Set-Location \"E:\\\\CODES\\\\Diyama app\\\\diyama-your-onchain-gateway\"; \\(git status --short\\).Count)",
+      "mcp__claude_ai_Supabase__list_projects",
+      "mcp__claude_ai_Supabase__deploy_edge_function",
+      "PowerShell(Rename-Item *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8081/)",
+      "Bash(npx supabase *)",
+      "Bash(npx tsc *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(git pull *)",
+      "Bash(git checkout *)",
+      "Bash(git commit *)"
+    ]
+  }
+}
