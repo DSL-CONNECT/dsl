@@ -27,7 +27,7 @@ const About = () => {
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
               <h1 className="text-4xl sm:text-5xl font-display font-bold mb-6">About Diyama Solutions</h1>
               <p className="text-xl opacity-80 leading-relaxed max-w-2xl">
-                Diyama Solutions exists because too many good businesses stall — not from lack of talent or effort, but from a lack of clarity, structure, and the right kind of support at the right time.
+                Diyama Solutions exists because too many good businesses stall, not from lack of talent or effort, but from a lack of clarity, structure, and the right kind of support at the right time.
               </p>
             </motion.div>
           </div>
@@ -37,7 +37,7 @@ const About = () => {
       <section className="section-padding bg-gradient-to-b from-surface to-background">
         <div className="container-narrow mx-auto">
           <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-            We're a business growth partner based in Zambia, serving clients across industries — from food brands and music artists to DAOs and tourism operators. We bring marketing, strategy, creative, and consulting under one roof so our clients can focus on what they do best: building.
+            We're a business growth partner based in Zambia, serving clients across industries: from food brands and music artists to DAOs and tourism operators. We bring marketing, strategy, creative, and consulting under one roof so our clients can focus on what they do best: building.
           </p>
         </div>
       </section>
@@ -47,7 +47,7 @@ const About = () => {
           <h2 className="text-3xl font-display font-bold mb-10 text-center">What drives us</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: Heart, title: "Warmth", desc: "We treat every client like a partner. No cold transactions — real support." },
+              { icon: Heart, title: "Warmth", desc: "We treat every client like a partner. Genuine support, every time." },
               { icon: Target, title: "Clarity", desc: "We cut through confusion and help you see the path forward." },
               { icon: Lightbulb, title: "Practicality", desc: "We don't deal in theory. Every recommendation is actionable." },
               { icon: Users, title: "Partnership", desc: "We grow when you grow. Our success is measured by yours." },
@@ -77,13 +77,13 @@ const About = () => {
               Diyama started with a simple observation: businesses everywhere have potential, but not all of them have access to the kind of strategic support that turns potential into momentum.
             </p>
             <p>
-              We built Diyama to be the partner we wished existed — one that combines practical business consulting with hands-on digital marketing, creative execution, and genuine care for outcomes.
+              We built Diyama to be the partner we wished existed, one that combines practical business consulting with hands-on digital marketing, creative execution, and genuine care for outcomes.
             </p>
             <p>
               From our earliest clients to our most recent partnerships, the mission has stayed the same: help businesses move from where they are to where they want to be. No empty hype. No overcomplicated frameworks. Just clarity, action, and results.
             </p>
             <p>
-              Today, we serve active clients across food & beverage, music, Web3, energy, development, and more. We're proud of the trust our clients place in us — and we work hard every day to earn it.
+              Today, we serve active clients across food & beverage, music, Web3, energy, development, and more. We're proud of the trust our clients place in us, and we work hard every day to earn it.
             </p>
           </div>
         </div>
@@ -93,7 +93,7 @@ const About = () => {
         <div className="container-narrow mx-auto">
           <h2 className="text-3xl font-display font-bold mb-4">Ready to work with us?</h2>
           <p className="text-muted-foreground mb-8 max-w-lg mx-auto">
-            Whether you need a full growth partner or just a clear-headed conversation about your next move — we're here.
+            Whether you need a full growth partner or just a clear-headed conversation about your next move, we're here.
           </p>
           <Link to="/consultations" className="btn-primary inline-flex items-center gap-2">
             Book a Consultation

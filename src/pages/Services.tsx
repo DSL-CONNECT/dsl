@@ -30,7 +30,7 @@ const Services = () => {
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-2xl text-primary-foreground">
               <h1 className="text-4xl sm:text-5xl font-display font-bold mb-4">Our Services</h1>
               <p className="text-lg opacity-80">
-                Practical, results-focused services designed to help your business grow. Whether you need marketing, strategy, creative, or tech — we're here to move with you.
+                Practical, results-focused services designed to help your business grow. Whether you need marketing, strategy, creative, or tech, we're here to move with you.
               </p>
             </motion.div>
           </div>
@@ -135,7 +135,7 @@ const Services = () => {
         <div className="container-narrow mx-auto relative z-10">
           <h2 className="text-3xl font-display font-bold mb-4">Not sure which service fits?</h2>
           <p className="opacity-80 mb-8 max-w-lg mx-auto">
-            Try our Business Fit Generator — it'll recommend the right services for your situation in under a minute.
+            Try our Business Fit Generator: it'll recommend the right services for your situation in under a minute.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link to="/business-fit" className="btn-accent inline-flex items-center gap-2">

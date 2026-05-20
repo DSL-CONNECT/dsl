@@ -64,7 +64,7 @@ export const clients: Client[] = [
     status: "active",
     category: "Music & Entertainment",
     shortDescription: "Artist branding, content strategy, and digital presence.",
-    testimonial: "Diyama understands the music business. They don't just post content — they build your brand story. – Rajiv Rox",
+    testimonial: "Diyama understands the music business. They don't just post content, they build your brand story. – Rajiv Rox",
     publicLink: "https://www.youtube.com/@rmrox",
     linkStatus: "verified",
     tags: ["Music", "Content", "Branding"],

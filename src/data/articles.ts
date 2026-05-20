@@ -39,7 +39,7 @@ export const articles: Article[] = [
   {
     id: "tourism-marketing-zambia",
     title: "Tourism Marketing in Zambia: What Actually Works",
-    excerpt: "Insights from real campaigns — what drives bookings for lodges, tours, and hospitality businesses in Zambia.",
+    excerpt: "Insights from real campaigns: what drives bookings for lodges, tours, and hospitality businesses in Zambia.",
     category: "Tourism",
     level: "advanced",
     readTime: "10 min",
@@ -57,7 +57,7 @@ export const articles: Article[] = [
   {
     id: "creator-economy-explained",
     title: "The Creator Economy: How to Turn Content Into Income",
-    excerpt: "Understanding how creators build sustainable businesses — and how Diyama supports that journey.",
+    excerpt: "Understanding how creators build sustainable businesses, and how Diyama supports that journey.",
     category: "Creator Economy",
     level: "beginner",
     readTime: "6 min",
@@ -75,7 +75,7 @@ export const articles: Article[] = [
   {
     id: "how-diyama-thinks",
     title: "How Diyama Thinks: Our Approach to Business Growth",
-    excerpt: "A look inside our methodology — why we prioritize clarity, practical action, and genuine partnership.",
+    excerpt: "A look inside our methodology: why we prioritize clarity, practical action, and genuine partnership.",
     category: "Diyama Way",
     level: "beginner",
     readTime: "5 min",

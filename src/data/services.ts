@@ -73,7 +73,7 @@ export const services: Service[] = [
     id: "web-development",
     title: "Website Development",
     category: "Digital & Tech",
-    description: "Websites that work as hard as you do — beautiful, fast, and conversion-focused.",
+    description: "Websites that work as hard as you do: beautiful, fast, and conversion-focused.",
     whoFor: "Businesses needing a professional web presence that actually drives results.",
     outcomes: ["Professional online presence", "Mobile-optimized experience", "Higher conversion rates"],
     firstEngagement: "We scope your needs and deliver a strategy document within the first week.",

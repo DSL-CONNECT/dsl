@@ -88,7 +88,7 @@ const Clients = () => {
                     <div className="bg-gradient-to-br from-surface to-card rounded-lg p-4 mb-4 flex-1">
                       <div className="flex gap-0.5 mb-2">{[1,2,3,4,5].map((s) => (<Star key={s} size={12} className="fill-accent text-accent" />))}</div>
                       <p className="text-sm italic text-muted-foreground leading-relaxed">"{client.testimonial}"</p>
-                      {client.reviewStatus === "sample" && (<p className="text-xs text-muted-foreground/60 mt-2 flex items-center gap-1"><AlertCircle size={10} /> Sample testimonial — editable</p>)}
+                      {client.reviewStatus === "sample" && (<p className="text-xs text-muted-foreground/60 mt-2 flex items-center gap-1"><AlertCircle size={10} /> Sample testimonial (editable)</p>)}
                     </div>
                     {client.linkStatus === "verified" && client.publicLink ? (
                       <a href={client.publicLink} target="_blank" rel="noopener noreferrer" className="text-sm text-primary font-medium inline-flex items-center gap-1 hover:underline mt-auto">Visit <ExternalLink size={12} /></a>

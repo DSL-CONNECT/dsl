@@ -44,7 +44,7 @@ const Contact = () => {
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-2xl">
               <h1 className="text-4xl sm:text-5xl font-display font-bold mb-4">Get in Touch</h1>
               <p className="text-lg opacity-80">
-                Have a question, need help, or ready to start? Reach out — we respond within 24 hours.
+                Have a question, need help, or ready to start? Reach out, we respond within 24 hours.
               </p>
             </motion.div>
           </div>

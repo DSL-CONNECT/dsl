@@ -48,7 +48,7 @@ const Index = () => {
                 <span className="text-accent">We'll help you move.</span>
               </h1>
               <p className="text-lg sm:text-xl opacity-80 leading-relaxed mb-8 max-w-2xl">
-                Whether you're building, fixing, growing, or figuring things out — you're welcome here. We help turn business confusion into clarity and traction.
+                Whether you're building, fixing, growing, or figuring things out, you're welcome here. We help turn business confusion into clarity and traction.
               </p>
               <motion.div 
                 initial={{ opacity: 0, y: 20 }}
@@ -76,7 +76,7 @@ const Index = () => {
               What are you trying to move right now?
             </h2>
             <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
-              Pick what resonates — we'll point you in the right direction.
+              Pick what resonates, and we'll point you in the right direction.
             </p>
           </motion.div>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 max-w-2xl mx-auto">
@@ -149,7 +149,7 @@ const Index = () => {
         <div className="container-wide mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl font-display font-bold mb-3">Trusted by real businesses</h2>
           <p className="text-muted-foreground mb-10 max-w-lg mx-auto">
-            From food brands to DAOs, transport companies to music artists — we've helped businesses across industries.
+            From food brands to DAOs, transport companies to music artists. We've helped businesses across industries.
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-3xl mx-auto">
             {featuredClients.map((c, i) => (
@@ -184,7 +184,7 @@ const Index = () => {
               Discover your business fit
             </h2>
             <p className="text-lg opacity-80 mb-8 max-w-xl mx-auto">
-              Answer a few questions and our AI will generate personalized recommendations, quick wins, and a suggested service bundle — all in under a minute.
+              Answer a few questions and our AI will generate personalized recommendations, quick wins, and a suggested service bundle, all in under a minute.
             </p>
             <Link to="/business-fit" className="btn-accent inline-flex items-center gap-2">
               Try the Business Fit Generator <ArrowRight size={16} />
@@ -272,7 +272,7 @@ const Index = () => {
             Ready to move forward?
           </h2>
           <p className="text-muted-foreground mb-8 max-w-lg mx-auto">
-            You don't need to have everything figured out. Bring the challenge — we'll help you structure the next move.
+            You don't need to have everything figured out. Bring the challenge, we'll help you structure the next move.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link to="/consultations" className="btn-primary inline-flex items-center gap-2">
