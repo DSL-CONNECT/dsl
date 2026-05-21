@@ -5,7 +5,6 @@ import { ArrowRight, Sparkles, Users, BookOpen, MessageSquare, TrendingUp, Light
 import { services } from "@/data/services";
 import { clients } from "@/data/clients";
 import heroImg from "@/assets/hero-consultant.jpg";
-import servicesImg from "@/assets/services-strategy.jpg";
 import PageTransition from "@/components/PageTransition";
 import AnimatedBg from "@/components/AnimatedBg";
 
@@ -39,14 +38,16 @@ const Index = () => {
       <section ref={heroRef} className="relative overflow-hidden min-h-[90vh] flex items-center">
         <motion.div className="absolute inset-0 z-0" style={{ y: heroY }}>
           <img src={heroImg} alt="" className="w-full h-full object-cover scale-110" />
-          <div className="absolute inset-0 bg-gradient-to-r from-foreground/92 via-foreground/72 to-foreground/30" />
-          <div className="absolute inset-0 bg-gradient-to-t from-foreground/40 via-transparent to-transparent" />
+          {/* Strong uniform dark overlay so all text is always readable */}
+          <div className="absolute inset-0 bg-foreground/80" />
+          {/* Subtle directional fade for visual depth — doesn't compromise contrast */}
+          <div className="absolute inset-0 bg-gradient-to-r from-foreground/15 via-transparent to-foreground/5" />
         </motion.div>
 
-        {/* Floating accent orbs over hero */}
+        {/* Subtle floating orbs — kept well below text contrast threshold */}
         <div className="absolute inset-0 z-1 pointer-events-none overflow-hidden">
-          <div className="absolute top-20 right-[15%] w-64 h-64 rounded-full bg-accent/10 blur-3xl animate-orb-1" />
-          <div className="absolute bottom-10 left-[10%] w-80 h-80 rounded-full bg-primary/15 blur-3xl animate-orb-2" />
+          <div className="absolute top-20 right-[15%] w-64 h-64 rounded-full bg-accent/8 blur-3xl animate-orb-1" />
+          <div className="absolute bottom-10 left-[10%] w-80 h-80 rounded-full bg-primary/8 blur-3xl animate-orb-2" />
         </div>
 
         <motion.div className="relative z-10 section-padding w-full" style={{ opacity: heroOpacity }}>
@@ -73,7 +74,7 @@ const Index = () => {
               </motion.h1>
               <motion.p
                 variants={fadeUp}
-                className="text-lg sm:text-xl opacity-80 leading-relaxed mb-10 max-w-2xl"
+                className="text-lg sm:text-xl text-white/90 leading-relaxed mb-10 max-w-2xl"
               >
                 Whether you're building, fixing, growing, or figuring things out, you're welcome here.
                 We help turn business confusion into clarity and traction.
@@ -152,12 +153,8 @@ const Index = () => {
       </section>
 
       {/* Services Preview */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img src={servicesImg} alt="" className="w-full h-full object-cover opacity-8" />
-          <div className="absolute inset-0 bg-surface/96" />
-        </div>
-        <AnimatedBg variant="primary" />
+      <section className="relative overflow-hidden bg-surface">
+        <AnimatedBg variant="subtle" />
         <div className="relative z-10 section-padding">
           <div className="container-wide mx-auto">
             <motion.div
